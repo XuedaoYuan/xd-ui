@@ -257,11 +257,12 @@ babel.config.js
 ```
 
 接下来说一下 `package.json`注意点。
-由于我们在之前的webpack配置中，已经设置了输出包的名字 `output.library`为**xd-ui**。所以我们也把第一行的`name`属性设置为**xd-ui**。这个名字可以自己取。
-`main`属性，用于我们比如使用 `import XdUI from "xd-ui"`时，指定从这里全局导出。（目前我失败了，不知道对不对）
-`files`属性用于在`npm publish`推送时表示推送哪些文件或文件夹
-`private`如果要发布的话必须设置为`false`
-`version`每次publish发布都必须修改`version`
+
+1. `name`属性:由于我们在之前的webpack配置中，已经设置了输出包的名字 `output.library`为**xd-ui**。所以我们也把第一行的`name`属性设置为**xd-ui**。这个名字可以自己取。
+2. `main`属性: 用于我们比如使用 `import XdUI from "xd-ui"`时，指定从这里全局导出。（目前我失败了，不知道对不对）
+3. `files`属性: 用于在`npm publish`推送时表示推送哪些文件或文件夹
+4. `private`如果要发布的话必须设置为`false`
+5. `version`每次publish发布都必须修改`version`
 
 ```json
 {
