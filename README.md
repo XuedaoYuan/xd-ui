@@ -299,7 +299,7 @@ babel.config.js
 
 如果想要用在页面， 那么我们也可以暂时新建一个工程，比如也用vue-cli新建一个工程， 这里我就不描述了。
 
-新建了工程之后我们安装需要的包，如果需要按需引入的话， 使用babel插件`babel-plugin-import`,他的主要作用是代码语法装换，比如可以把如下的代码
+新建了工程之后我们安装需要的包，如果需要按需引入的话， 使用babel插件`babel-plugin-import`,他的主要作用是代码语法转换，比如可以把如下的代码
 
 ```js
 import { XdButton } from 'xd-ui'
@@ -320,7 +320,7 @@ css 就是这样子单独引入的。后面的`lib`是默认的，因为我们�
 npm i babel-plugin-import -D 
 ```
 
-修改babel配置文件 `babel.config.js`为
+修改babel配置文件 `babel.config.js`为。主要增加`import`选项， 其他若不一致可以不动
 
 ```js
 module.exports = {
